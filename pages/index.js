@@ -1,7 +1,6 @@
 import { frontpageData } from "../queries";
 import Anchor from "../components/Anchor";
 export default function Home({ data }) {
-  console.log(data);
   return (
     <ol>
       {data.map((entry) => {

@@ -2,11 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 export default function Henry({ data }) {
-  console.log(data);
   const [count, setCount] = useState(0);
   function getSuffix() {
     let number = count > 20 ? Number(String(count).at(-1)) : count;
-    console.log(number);
+
     switch (number) {
       case 1:
         return "st";
